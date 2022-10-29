@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using function</title>
+</head>
+<body>
+    <script>
+        //asking oparetor
+        var oparetorSelection = prompt("What you want to do?");
+
+        
+        //oparetor condition
+        if (oparetorSelection== "addition"|| oparetorSelection =="Addition") {
+            document.write("Addition Result = " + addition(firstNumber,secondNumber));
+            
+        }
+        else if (oparetorSelection== "subtraction"|| oparetorSelection =="Subtraction") {
+            document.write("Subtraction Result = " + subtraction(firstNumber,secondNumber));
+        
+        }
+        else if (oparetorSelection== "multiplication"|| oparetorSelection =="Multiplication") {
+            document.write("Multiplication Result = " + multiplication(firstNumber,secondNumber));
+            
+        }
+        else if (oparetorSelection== "division"|| oparetorSelection =="Division") {
+            document.write("Division Result = " + division(firstNumber,secondNumber));
+            
+        }
+        else{
+            document.write("<h1>This calculator dose not support this oparetor</h1>");
+        }
+        // Asking Numbers
+        var firstNumber = parseInt(prompt("Enter first number"));
+        var secondNumber = parseInt(prompt("Enter second number"));
+
+        //functions 
+        function addition(firstNumber,secondNumber){
+            var result = firstNumber+secondNumber;
+            return result;
+        }
+        function subtraction(firstNumber,secondNumber){
+            var result = firstNumber-secondNumber;
+            return result;
+        }
+        function multiplication(firstNumber,secondNumber){
+            var result = firstNumber*secondNumber;
+            return result;
+        }    
+        function division(firstNumber,secondNumber){
+            if (firstNumber < secondNumber) {
+                var bigNumber = secondNumber;
+                var smallNumber = firstNumber;
+            }
+            else{
+                bigNumber= firstNumber;
+                smallNumber= secondNumber;
+            }
+            var result = bigNumber/smallNumber;
+            return result;
+        }
+
+    </script>
+</body>
+</html>

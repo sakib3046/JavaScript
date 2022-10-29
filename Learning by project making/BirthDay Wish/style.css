@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(45deg,#F21B6A, #F26457,#F2E307);
+    font-family: 'Dancing Script', cursive;
+
+}
+#text{
+    color: white;
+    height: auto;
+    border-style: solid;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.note{
+    margin: 1rem;
+    padding: 1rem;
+    color: #F1F1F1;
+    font-size: 20px;
+}
+.thank{
+    animation: thank 5s infinite;
+
+}
+@keyframes thank {
+    0%   {color: red;}
+    25%  {color: blue;}
+    50%  {color: yellow;}
+    75%  {color: green;}
+    100% {color: white;}
+  }

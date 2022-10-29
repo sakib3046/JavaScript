@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game by Math object</title>
+</head>
+<body>
+    <h1 style="color:blueviolet ;">Guessing Game</h1>
+    <script>
+        var yourGuess = parseInt(prompt("Enter your Guessing Number (1-10): "));
+        var computerGuess = Math.floor(Math.random()*11);
+        if (yourGuess == computerGuess) {
+            document.write("<h1> You Won!!! </h1>");
+        }
+        else{
+            document.write("<h1> You Lost :( </h1>")
+        }
+        document.write("Your Guess: "+yourGuess)
+        document.write("<br>Computer Guess: "+computerGuess);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grading System</title>
+</head>
+<body>
+
+	<script>
+		
+		var mark = prompt("Inter Your Mark Here:");
+		mark = parseInt(mark);
+
+		if (mark>100) {
+			document.write("Unvalid Mark. Please enter right mark");
+		}
+		else if (mark>=80) {
+				document.write("Congarts! You have got A+")
+		} 
+		else if (mark>=30) {
+			document.write(" You have passed.")
+		}
+
+		else {
+			document.write("You FAILD !!!")
+		}
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students details by object & Constractor</title>
+</head>
+<body>
+    <script>
+        var studens=[]
+        var inputNumber = parseInt(prompt("Enter Student Number: "));
+        
+        function StudentDetails(name,roll,gpa){
+            this.name= name;
+            this.roll= roll;
+            this.gpa= gpa;
+        };
+        for(var i=0; i<inputNumber ;i++){
+           studens[i]= new StudentDetails(prompt("Name"),prompt("Roll"),prompt("GPA"));
+        }
+
+        for(var i = 0;i <inputNumber ; i++){
+            console.log((i+1) + ". Name: "+studens[i].name);
+            console.log((i+1) + ". Roll: "+studens[i].roll);
+            console.log((i+1) + ". GPA: "+studens[i].gpa);
+        }
+
+    </script>
+</body>
+</html>
