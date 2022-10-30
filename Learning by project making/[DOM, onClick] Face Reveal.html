@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who am I???</title>
+</head>
+
+<body>
+    <button id="valid" onclick="valid()">valid</button>
+    <button id="imageButton" onclick="imageButton()"> My image</button>
+    <img id="image" src="#" alt="">
+
+    <script>
+        var name;
+        function valid() {
+            name = prompt("Enter your name: ")
+        }
+
+        var lowerName = name.toLowerCase();
+
+        function imageButton() {
+            if (lowerName == "sakib") {
+                document.getElementById("image").src = "img/img.jpg";
+            }
+            else {
+                document.write("Please Enter valid name");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
