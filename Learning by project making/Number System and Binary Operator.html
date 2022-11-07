@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num</title>
+</head>
+
+<body>
+    <h1>Start From Here</h1>
+    <script>
+        var number1 = parseInt(prompt("Enter First Number: "));
+        var number2 = parseInt(prompt("Enter Second Number: "));
+        document.write("You Enteried " + number1 + " & " + number2);
+        document.write("<P>First Number in Binary : " + number1.toString(2));
+        document.write("<P>Second Number in Binary: " + number2.toString(2));
+        document.write("<P>First Number in Octal: " + number1.toString(8));
+        document.write("<P>Second Number in Octal: " + number2.toString(8));
+        document.write("<P>First Number in HEX: " + number1.toString(16).toUpperCase());
+        document.write("<P>Second Number in HEX: " + number2.toString(16).toUpperCase());
+        document.write("<p>AND of two numbers: " + AND(number1, number2));
+        document.write("<p>OR of two numbers: " + OR(number1, number2));
+
+        //Functions
+
+        function AND(number1, number2) {
+            let and;
+            and = number1.toString(2) & number2.toString(2);
+            return and;
+        }
+
+        function OR(number1, number2) {
+            let or;
+            or = number1.toString(2) | number2.toString(2);
+            return or;
+        }
+    </script>
+</body>
+
+</html>

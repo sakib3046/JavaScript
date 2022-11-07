@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=o, initial-scale=1.0">
+    <title>Bulb On Off</title>
+</head>
+
+<body>
+    <button id="button">Turn On</button>
+    <img src="./off.png" alt="" id="bulb">
+
+
+    <style>
+
+    </style>
+
+    <script>
+        const button = document.querySelector('#button');
+        const bulb = document.querySelector('#bulb');
+        button.addEventListener('click', function () {
+            if (bulb.src.match('off')) {
+                bulb.src = "./on.png";
+                button.innerHTML = "Turn Off";
+
+            }
+            else {
+                bulb.src = "./off.png";
+                button.innerHTML = "Turn On";
+            }
+
+        });
+
+
+    </script>
+</body>
+
+</html>
